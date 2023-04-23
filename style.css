@@ -49,6 +49,10 @@ aside a {
     border-radius: 5px;
     width: 90%;
 }
+#sideBarHeading {
+    text-align: center;
+    padding: 5px 0;
+}
 .featuredImage {
     max-width: 100%;
 }
