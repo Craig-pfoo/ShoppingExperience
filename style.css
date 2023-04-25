@@ -48,6 +48,7 @@ aside a {
     padding: 2%;
     border-radius: 5px;
     width: 90%;
+    display: table;
 }
 #sideBarHeading {
     text-align: center;
@@ -91,4 +92,39 @@ footer {
     margin: 0 auto;
     font-style: italic;
     padding-top: 35px;
+}
+.tableRow {
+    display: table-row;
+}
+.tableCell {
+    display: table-cell;
+    padding: 10px 0;
+}
+.tableCell:first-child {
+    font-weight: bold;
+}
+#cartButtons {
+    text-align: right;
+    padding: 15px 3% 0 0;
+}
+#cartButtons button {
+    background-color: #037DBE;
+    border-style: none;    
+    border-radius: 3px;
+    color: #FFFFFF;
+    padding: 2%;
+    cursor: pointer;
+}
+#cartButtons #clearCartButton {
+    background-color: #EEEEEE;
+    border: 1px solid #037DBE;
+    color: #037DBE;
+}
+.borderBottom {
+    border-bottom: 1px solid #BBBBBB;
+}
+.removeLink {
+    text-align: end;
+    font-size: 80%;
+    color: #037DBE;
 }
