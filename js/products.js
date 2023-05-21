@@ -1,4 +1,4 @@
-const imagePath = "images/shop/thumbnails";
+const imagePath = "images/shop/thumbnails/";
 const products = [
     {
         id: 1,
@@ -7,7 +7,7 @@ const products = [
         description: "A porcelain figurine of a clown holding an umbrella and riding a unicycle",
         quantity: 1,
         price: 29.95
-    };
+    },
     {
         id: 2,
         image: imagePath + "ElephantFigurines_Thumb.jpg",
@@ -15,7 +15,7 @@ const products = [
         description: "White elephant ceramic figurines decorate with various fine color",
         quantity: 1,
         price: 18.95
-    };
+    },
     {
         id: 3,
         image: imagePath + "SquishyCaterpillar_Thumb.jpg",
@@ -23,7 +23,7 @@ const products = [
         description: "A squashy, spiky, multi-colored caterpillar",
         quantity: 1,
         price: 9.99
-    };
+    },
     {
         id: 4,
         image: imagePath + "MiniCactus_Thumb.jpg",
@@ -31,7 +31,7 @@ const products = [
         description: "A miniature cactus in a pink vase",
         quantity: 1,
         price: 12.99
-    };
+    },
     {
         id: 5,
         image: imagePath + "Nanoblocks_Thumb.jpg",
@@ -39,7 +39,7 @@ const products = [
         description: "The smallest connect blocks on the market",
         quantity: 1,
         price: 32.95
-    };
+    },
     {
         id: 6,
         image: imagePath + "CuteGoat_Thumb.jpg",
@@ -47,7 +47,7 @@ const products = [
         description: "A small white ceramic goat",
         quantity: 1,
         price: 15.95
-    };
+    },
     {
         id: 7,
         image: imagePath + "LawnGnome_Thumb.jpg",
@@ -55,14 +55,13 @@ const products = [
         description: "An angry lawn gnome holding a sign that says 'GO AWAY'",
         quantity: 1,
         price: 7.95
-    };
+    },
     {
         id: 8,
         image: imagePath + "BobRoss_Thumb.jpg",
         name: "Bob Ross",
-        description: "A Bob Ross plastic figure holding a paint palette"
+        description: "A Bob Ross plastic figure holding a paint palette",
         quantity: 1,
         price: 18.95
-    };
-    
-]
+    }
+];
