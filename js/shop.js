@@ -34,9 +34,9 @@ saveToLocalStorage();
 
 function displayCart () {
   clearStorageAndCart();
-  sideBarContainer.innerHTML = ""
+  sideBarContainer.innerHTML = "";
    cart.forEach((cartItem) => {
-    sideBarContainer.innerHTML = `
+    sideBarContainer.innerHTML += `
                   <div class="tableRow">
                   <div class="tableCell">${cartItem.name}</div>
                   <div class="tableCell">&dollar;${cartItem.price}</div>
