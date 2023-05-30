@@ -25,8 +25,28 @@ function saveToLocalStorage() {
     let selectedProduct = products.find((product) => product.id == cartButton[i].id);
     cart.push(selectedProduct);
     localStorage.setItem("CART", JSON.stringify(cart));
+    displayCart();
   });
  }
 }
 saveToLocalStorage();
 
+
+function displayCart () {
+  clearStorageAndCart();
+  sideBarContainer.innerHTML = ""
+   cart.forEach((cartItem) => {
+    sideBarContainer.innerHTML = `
+                  <div class="tableRow">
+                  <div class="tableCell">${cartItem.name}</div>
+                  <div class="tableCell">&dollar;${cartItem.price}</div>
+                </div>
+                <div class="tableRow">
+                  <div class="tableCell borderBottom"></div>
+                  <a class="tableCell borderBottom removeLink" id="${cartItem.id}" href="#">Remove</a>
+                </div>`;
+    });
+   
+}
+
+displayCart();
