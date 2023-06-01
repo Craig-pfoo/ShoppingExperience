@@ -45,8 +45,14 @@ function displayCart () {
                   <div class="tableCell borderBottom"></div>
                   <a class="tableCell borderBottom removeLink" id="${cartItem.id}" href="#">Remove</a>
                 </div>`;
+                removeFromCart();
     });
    
 }
 
 displayCart();
+
+let checkoutButton = document.getElementById('checkoutButton');
+checkoutButton.addEventListener('click', () => {
+  window.location.href = 'cart.html'
+});
