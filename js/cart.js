@@ -13,7 +13,7 @@ const cartCardContainer = document.querySelector("#cartCardContainer");
                         <div class="cartQuantity">
                             <input type="number" value="${cartItem.quantity}" min="1" max="5">
                         </div>
-                        <p class="cartPrice">&dollar; ${cartItem.price}</p>
+                        <p class="cartPrice">&dollar;${cartItem.price}</p>
                     </div>
                         <p class="textAlignRight removeMargins"><a href="#" class="removeLink" id="${cartItem.id}">Remove</a></p>
                 </div>
