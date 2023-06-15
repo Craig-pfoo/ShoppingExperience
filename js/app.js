@@ -29,6 +29,7 @@ function removeFromCart() {
                 }
                 if (typeof displayCartProducts === "function") {
                     displayCartProducts();
+                    displayOrderSummary();
                 }
                 displayOrderSummary();
                 if (cart.length == 0) {
@@ -48,8 +49,8 @@ function clearCart() {
             }
             if (typeof displayCartProducts === "function") {
                 displayCartProducts();
+                displayOrderSummary();
             }
-            displayOrderSummary();
     });
 }
 clearCart();

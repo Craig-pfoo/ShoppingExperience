@@ -49,7 +49,7 @@ function calculateOrderSummary() {
 
 function displayOrderSummary() {
     calculateOrderSummary();
-    sideBarContainer.innerHTML += `
+    sideBarContainer.innerHTML = `
             <div class="tableRow">
                     <div class="tableCell">Subtotal</div>
                     <div class="tableCell">&dollar; ${subtotal.toFixed(2)}</div>
