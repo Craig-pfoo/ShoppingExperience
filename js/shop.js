@@ -53,6 +53,7 @@ function displayCart () {
                   <a class="tableCell borderBottom removeLink" id="${cartItem.id}" href="#">Remove</a>
                 </div>`;
                 removeFromCart();
+                updateQuantity();
     });
    
 }
