@@ -59,6 +59,7 @@ $('.next').click(function(){
     currentPage++;
     paginate();
     saveToLocalStorage();
+    fadeButtons();
   }
 });
 $('.previous').click(function(){
@@ -66,6 +67,7 @@ $('.previous').click(function(){
     currentPage--;
     paginate();
     saveToLocalStorage();
+    fadeButtons();
   }
 });
 
